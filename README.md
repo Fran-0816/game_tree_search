@@ -19,7 +19,7 @@ C++ を使用してゲーム木探索アルゴリズムを実装する
     として実行する.
 
 2. ファイルごとにコンパイルする  
-    `build.sh` によってソースファイルごとにコンパイルし, 1. と同様に実行します.  
+    [`build.sh`](https://github.com/Fran-0816/game_tree_search/blob/main/build.sh) によってソースファイルごとにコンパイルし, 1. と同様に実行します.  
     例えば, `05.primitive_montecalro.cpp` と `07.puct.cpp` を同時にコンパイルするには
     ```
     bash build.sh 05 07
@@ -29,7 +29,7 @@ C++ を使用してゲーム木探索アルゴリズムを実装する
     bash build.sh all
     ```
     とします.  
-    シェルスクリプトが実行できない場合は, `build.sh` に書かれたコマンドを手打ちしてください.
+    シェルスクリプトが実行できない場合は, [`build.sh`](https://github.com/Fran-0816/game_tree_search/blob/main/build.sh) に書かれたコマンドを手打ちしてください.
 
 ## ライブラリ
 1. [`games`](https://github.com/Fran-0816/game_tree_search/tree/main/games)
@@ -60,8 +60,8 @@ C++ を使用してゲーム木探索アルゴリズムを実装する
    7. [`puct`](https://github.com/Fran-0816/game_tree_search/blob/main/07.puct.cpp) : PUCT (Polynomial Upper Confidence Tree)
 2. 三目並べ
    1. [`dfs`](https://github.com/Fran-0816/game_tree_search/blob/main/08.dfs.cpp) : すべての節点を訪問, およびトランスポジションテーブルに記録した以前の探索結果を活用
-   2. [`and_or`](https://github.com/Fran-0816/game_tree_search/blob/main/09.and_or.cpp) : AND/OR 木探索
-   3. [`transposition_table`](https://github.com/Fran-0816/game_tree_search/blob/main/10.transposition_table.cpp) : AND/OR 木探索に, トランスポジションテーブルを適用
+   2. [`and_or`](https://github.com/Fran-0816/game_tree_search/blob/main/09.and_or.cpp) : AND/OR 木探索 (証明数非使用)
+   3. [`transposition_table`](https://github.com/Fran-0816/game_tree_search/blob/main/10.transposition_table.cpp) : AND/OR 木探索 (証明数非使用) に, トランスポジションテーブルを適用
 3. 15 パズル
    1. [`a_star`](https://github.com/Fran-0816/game_tree_search/blob/main/11.a_star.cpp) : A* 探索
    2. [`ida_star`](https://github.com/Fran-0816/game_tree_search/blob/main/12.ida_star.cpp) : 反復深化 A* 探索
