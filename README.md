@@ -7,14 +7,14 @@ C++ を使用してゲーム木探索アルゴリズムを実装する
 1. [CMake](https://cmake.org/) を使用する  
     例えば, [Ninja](https://ninja-build.org/) を併用して  
     ```
-    cmake -G Ninja -S . -B build
-    ninja -C build
+    % cmake -G Ninja -S . -B build
+    % ninja -C build
     ```
     のようにビルドすると, すべてソースファイル (`01.mini_max.cpp` ~ `12.ida_star.cpp`) に対する実行ファイルが生成されるので  
     ```
-    build/mini_max
+    % build/mini_max
     ...
-    build/ida_star
+    % build/ida_star
     ```
     として実行する.
 
@@ -22,11 +22,11 @@ C++ を使用してゲーム木探索アルゴリズムを実装する
     [`build.sh`](https://github.com/Fran-0816/game_tree_search/blob/main/build.sh) によってソースファイルごとにコンパイルし, 1. と同様に実行します.  
     例えば, `05.primitive_montecalro.cpp` と `07.puct.cpp` を同時にコンパイルするには
     ```
-    bash build.sh 05 07
+    % bash build.sh 05 07
     ```
     とすればよく, すべてのソースファイルをコンパイルするには
     ```
-    bash build.sh all
+    % bash build.sh all
     ```
     とします.  
     シェルスクリプトが実行できない場合は, [`build.sh`](https://github.com/Fran-0816/game_tree_search/blob/main/build.sh) に書かれたコマンドを手打ちしてください.
