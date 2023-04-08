@@ -42,7 +42,7 @@ for arg in "${args[@]}"; do
         04) $compiler $options -o $build_dir/evaluate_function $play $othello $time_keeper 04.evaluate_function.cpp ;;
         05) $compiler $options -o $build_dir/primitive_montecalro $play $othello 05.primitive_montecalro.cpp ;;
         06) $compiler $options -o $build_dir/uct $play $othello 06.uct.cpp ;;
-        07) $compiler $options -o $build_dir/puct $play $othello 07.puct.cpp ;;
+        07) $compiler $options -o $build_dir/mcts $play $othello 07.mcts.cpp ;;
         08) $compiler $options -o $build_dir/dfs $play $tic_tac_toe 08.dfs.cpp ;;
         09) $compiler $options -o $build_dir/and_or $play $tic_tac_toe 09.and_or.cpp ;;
         10) $compiler $options -o $build_dir/transposition_table $play $tic_tac_toe 10.transposition_table.cpp ;;

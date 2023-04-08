@@ -1,5 +1,5 @@
 /*
-PUCT
+MCTS
 */
 
 #include <array>
@@ -100,7 +100,7 @@ private:
     int win_;
 };
 
-Action puct_action(const State& state, int playout_number) {
+Action mcts_action(const State& state, int playout_number) {
     auto legal_actions = state.legal_actions();
     int action_size = legal_actions.size();
     if (!action_size) {
@@ -124,8 +124,8 @@ Action puct_action(const State& state, int playout_number) {
 
 int main() {
     std::array<play::Player<State, Action>, 2> players = {
-        // [](const State& state) { return puct_action(state, 1000); },
-        [](const State& state) { return puct_action(state, 500); },
+        // [](const State& state) { return mcts_action(state, 1000); },
+        [](const State& state) { return mcts_action(state, 500); },
         [](const State& state) { return random_action(state); },
     };
     play::test_ai(players, 100);

@@ -20,7 +20,7 @@ C++ を使用してゲーム木探索アルゴリズムを実装する
 
 2. ファイルごとにコンパイルする  
     [`build.sh`](https://github.com/Fran-0816/game_tree_search/blob/main/build.sh) によってソースファイルごとにコンパイルし, 1. と同様に実行します.  
-    例えば, `05.primitive_montecalro.cpp` と `07.puct.cpp` を同時にコンパイルするには
+    例えば, `05.primitive_montecalro.cpp` と `07.mcts.cpp` を同時にコンパイルするには
     ```
     % bash build.sh 05 07
     ```
@@ -57,7 +57,7 @@ C++ を使用してゲーム木探索アルゴリズムを実装する
    4. [`evaluate_function`](https://github.com/Fran-0816/game_tree_search/blob/main/04.evaluate_function.cpp) : 評価関数の改善
    5. [`primitive_montecalro`](https://github.com/Fran-0816/game_tree_search/blob/main/05.primitive_montecalro.cpp) : 原始モンテカルロ木探索
    6. [`uct`](https://github.com/Fran-0816/game_tree_search/blob/main/06.uct.cpp) : UCT (Upper Confidence Tree)
-   7. [`puct`](https://github.com/Fran-0816/game_tree_search/blob/main/07.puct.cpp) : PUCT (Polynomial Upper Confidence Tree)
+   7. [`mcts`](https://github.com/Fran-0816/game_tree_search/blob/main/07.mcts.cpp) : MCTS (Monte Carlo Tree Search)
 2. 三目並べ
    1. [`dfs`](https://github.com/Fran-0816/game_tree_search/blob/main/08.dfs.cpp) : すべての節点を訪問, およびトランスポジションテーブルに記録した以前の探索結果を活用
    2. [`and_or`](https://github.com/Fran-0816/game_tree_search/blob/main/09.and_or.cpp) : AND/OR 木探索 (証明数非使用)
